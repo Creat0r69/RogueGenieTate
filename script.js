@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
       aura: "none.png",
       hat: "none.png",
       eyes: "none.png",
-      outfits: "none.png",
       rightHand: "none.png",
     };
 
@@ -41,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .querySelector(".randomizeBtn")
     .addEventListener("click", function () {
-      ["bg", "aura", "hat", "eyes", "outfits", "rightHand"].forEach((part) => {
+      ["bg", "aura", "hat", "eyes", "rightHand"].forEach((part) => {
         const selectElement = document.getElementById(part);
         const randomValue = getRandomOption(selectElement);
         selectElement.value = randomValue; // Update the select element with the random value
@@ -55,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
     head: "assetsbuilder/images/head/main.png",
     eyes: "assetsbuilder/images/eyes/none.png",
     hat: "assetsbuilder/images/hat/none.png",
-    outfits: "assetsbuilder/images/outfits/none.png",
     rightHand: "assetsbuilder/images/rightHand/none.png",
   };
 
@@ -106,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
       "head",
       "eyes",
       "hat",
-      "outfits",
       "rightHand",
     ];
     for (const part of drawOrder) {
@@ -119,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateAvatar();
   }
 
-  ["bg", "aura", "hat", "eyes", "outfits", "rightHand"].forEach((part) => {
+  ["bg", "aura", "hat", "eyes", "rightHand"].forEach((part) => {
     const element = document.getElementById(part);
     if (element) {
       element.addEventListener("change", function () {

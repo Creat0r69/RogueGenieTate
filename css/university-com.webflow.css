@@ -3078,7 +3078,7 @@ figcaption {
 
   .padding-section-medium {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
   }
 
   .title-gold {
@@ -3574,7 +3574,6 @@ figcaption {
 
   .padding-section-medium {
     padding-top: 3rem;
-    padding-bottom: 3rem;
   }
 
   .hero_video_wrap {
